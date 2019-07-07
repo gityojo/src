@@ -3,6 +3,7 @@ FROM php:7.2-fpm
 RUN apt-get update \ 
     && apt-get install -y \
     unzip \
+    vim \
     zlib1g-dev \
     libfreetype6-dev \
     libjpeg62-turbo-dev \
@@ -37,4 +38,4 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get update
 RUN apt-get install -y nodejs
 
-WORKDIR /src
+WORKDIR /src/sample
